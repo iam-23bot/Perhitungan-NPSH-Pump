@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung NPSH Pompa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung NPSH Pompa</h1>
+        <form id="npshForm">
+            <label for="hs">Tinggi Suction (Hs):</label>
+            <input type="number" id="hs" name="hs" required>
+            <select id="hsUnit">
+                <option value="m">meter</option>
+                <option value="ft">feet</option>
+            </select>
+
+            <label for="hvpa">Tekanan Uap (Hvpa):</label>
+            <input type="number" id="hvpa" name="hvpa" required>
+            <select id="hvpaUnit">
+                <option value="kPa">kPa</option>
+                <option value="psi">psi</option>
+            </select>
+
+            <label for="hfs">Kerugian Suction (Hfs):</label>
+            <input type="number" id="hfs" name="hfs" required>
+            <select id="hfsUnit">
+                <option value="m">meter</option>
+                <option value="ft">feet</option>
+            </select>
+
+            <label for="p">Tekanan (P):</label>
+            <input type="number" id="p" name="p" required>
+            <select id="pUnit">
+                <option value="kPa">kPa</option>
+                <option value="psi">psi</option>
+            </select>
+
+            <button type="button" onclick="calculateNPSH()">Hitung NPSH</button>
+        </form>
+        <div id="result"></div>
+        <p>LinkedIn: Muhammad Alfi Syahri</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
